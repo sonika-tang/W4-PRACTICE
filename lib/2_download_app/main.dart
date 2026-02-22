@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:w4_practice/2_download_app/ui/screens/downloads/widgets/download_controler.dart';
 
 import 'ui/providers/theme_color_provider.dart';
 import 'ui/screens/settings/settings_screen.dart';
 import 'ui/screens/downloads/downloads_screen.dart';
 import 'ui/theme/theme.dart';
+
+final List<DownloadController> downloadControllers = [
+  DownloadController(Ressource(name: 'image1.png', size: 120)),
+  DownloadController(Ressource(name: 'image2.png', size: 500)),
+  DownloadController(Ressource(name: 'image3.png', size: 12000)),
+];
 
 void main() {
   runApp(const MyApp());
